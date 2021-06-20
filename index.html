@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Library</title>
+</head>
+<body>
+    <header class="header">
+        <h1>Online Library</h1>
+    </header>
+    
+    <div class="add-form">
+            <form id="book-form">
+                <input id="title" name="title" type="text" placeholder="Title" required />
+                <input id="author" name="author" type="text" placeholder="Author" required />
+                <input id="pages" name="pages" type="number" placeholder="Number of pages" required />
+            </form>
+    </div>
+    <div class="check-form">
+            <label for="read" class="checkbox-container">
+                  Read:
+                  <input id="read" name="read" type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <button class="btn btn-add" type="submit" form="book-form" id="add-button">Add</button>
+            </form>
+      </div>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Number Of Pages</th>
+            <th>Have Read?</th>
+          </tr>
+        </thead>
+        <tbody id="library-container"></tbody>
+      </table>
+  
+   
+    <script src="script.js"></script>
+    
+</body>
+</html>
